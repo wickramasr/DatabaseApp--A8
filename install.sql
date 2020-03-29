@@ -69,10 +69,10 @@ CREATE TABLE Are_mentioned_in
 );
 
 insert into Customer values("Sahan", 4160206,0622394802,"Sathorn","abcd")
-insert into Recipe values("Biriyani",111,"aaa","tasty Dish",60)
+insert into Recipe values("Biriyani",1122,111,"tasty Dish",60)
 insert into Ingredient values("Rice",112,"1kg")
-insert into Bill values("Rice",2020-03-29,60)
+insert into Bill values("Rice",1133,2020-03-29)
 insert into Searched_By values(11111,112,111)
 insert into Is_paid_bt values(4160206,13456)
-insert into Is_in values(112,111)
+insert into Is_in values(112,111,556644)
 insert into Are_mentioned_in values(12344,112)
