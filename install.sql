@@ -1,26 +1,26 @@
 CREATE TABLE Customer
 (
-  Cus_Name INT NOT NULL,
+  Cus_Name VARCHAR(50) NOT NULL,
   Cus__user_ID INT NOT NULL,
   Cus_phone_number INT NOT NULL,
-  Cus_Address INT NOT NULL,
+  Cus_Address VARCHAR(200) NOT NULL,
   Cus_Password INT NOT NULL,
   PRIMARY KEY (Cus__user_ID)
 );
 
 CREATE TABLE Recipe
 (
-  Recipe_Name INT NOT NULL,
+  Recipe_Name VARCHAR(50) NOT NULL,
+  Ingredient_IDs INT NOT NULL,
   Recipe_ID INT NOT NULL,
-  Recipe_Type INT NOT NULL,
-  Description INT NOT NULL,
+  Description VARCHAR(500) NOT NULL,
   Preparing_Time INT NOT NULL,
-  PRIMARY KEY (Ingredient_ID, Recipe_ID)
+  PRIMARY KEY (Ingredient_IDs, Recipe_ID)
 );
 
 CREATE TABLE Ingredient
 (
-  Ingredient_name INT NOT NULL,
+  Ingredient_name VARCHAR(100) NOT NULL,
   Ingredient_ID INT NOT NULL,
   Ingredient_Amount INT NOT NULL,
   PRIMARY KEY (Ingredient_ID)
@@ -28,19 +28,19 @@ CREATE TABLE Ingredient
 
 CREATE TABLE Bill
 (
-  Ingredient_Order INT NOT NULL,
+  Ordered_Ingredients VARCHAR(500) NOT NULL,
   Bill_ID INT NOT NULL,
-  Date_and_Time INT NOT NULL,
+  Date_and_Time DATE NOT NULL,
   PRIMARY KEY (Bill_ID)
 );
 
 CREATE TABLE Searched_By
 (
   Cus__user_ID INT NOT NULL,
-  Ingredient_ID INT NOT NULL,
+  Ingredient_IDs INT NOT NULL,
   Recipe_ID INT NOT NULL,
   FOREIGN KEY (Cus__user_ID) REFERENCES Customer(Cus__user_ID),
-  FOREIGN KEY (Ingredient_ID, Recipe_ID) REFERENCES Recipe(Ingredient_ID, Recipe_ID)
+  FOREIGN KEY (Ingredient_IDs, Recipe_ID) REFERENCES Recipe(Ingredient_IDs, Recipe_ID)
 );
 
 CREATE TABLE Is_paid_by
@@ -54,9 +54,10 @@ CREATE TABLE Is_paid_by
 CREATE TABLE Is_in
 (
   Ingredient_ID INT NOT NULL,
+  Ingredient_IDs INT NOT NULL,
   Recipe_ID INT NOT NULL,
   FOREIGN KEY (Ingredient_ID) REFERENCES Ingredient(Ingredient_ID),
-  FOREIGN KEY (Ingredient_ID, Recipe_ID) REFERENCES Recipe(Ingredient_ID, Recipe_ID)
+  FOREIGN KEY (Ingredient_IDs, Recipe_ID) REFERENCES Recipe(Ingredient_IDs, Recipe_ID)
 );
 
 CREATE TABLE Are_mentioned_in
