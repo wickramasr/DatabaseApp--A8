@@ -59,7 +59,7 @@ CREATE TABLE Is_in
   FOREIGN KEY (Ingredient_ID) REFERENCES Ingredient(Ingredient_ID),
   FOREIGN KEY (Ingredient_IDs, Recipe_ID) REFERENCES Recipe(Ingredient_IDs, Recipe_ID)
 );
-
+    
 CREATE TABLE Are_mentioned_in
 (
   Bill_ID INT NOT NULL,
@@ -68,11 +68,11 @@ CREATE TABLE Are_mentioned_in
   FOREIGN KEY (Ingredient_ID) REFERENCES Ingredient(Ingredient_ID)
 );
 
-insert into Customer values("Sahan", 4160206,0622394802,"Sathorn","abcd")
-insert into Recipe values("Biriyani",1122,111,"tasty Dish",60)
-insert into Ingredient values("Rice",112,"1kg")
-insert into Bill values("Rice",1133,2020-03-29)
-insert into Searched_By values(11111,112,111)
-insert into Is_paid_bt values(4160206,13456)
-insert into Is_in values(112,111,556644)
-insert into Are_mentioned_in values(12344,112)
+insert into Customer values("Jackson Oneil", 2825, 16780416 ,"Ap #145-2393 Convallis St.", 9430125)
+insert into Recipe values("Biriyani",2681,6557," A great one-pot rice dish that can still be served up a few days later, perfect for leftovers",30)
+insert into Ingredient values("Rice",5512, 22)
+insert into Bill values("Lorem",2138,"2019-07-25")
+insert into Searched_By values(9218,6260,8641)
+insert into Is_paid_by values(9218,4759)
+insert into Is_in values(7144,6260,8641)
+insert into Are_mentioned_in values(2138,7144)
