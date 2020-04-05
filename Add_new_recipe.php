@@ -65,21 +65,21 @@ input[type=submit]:hover {
 
 
 <div class="container">
-  <form action="nepsri.php" method= "POST">
+  <form action="target_nepsri.php" method= "POST">
     <div class="row">
       <div class="col-25">
-        <label for="Recipe Name">Recipe Name</label>
+        <label for="Recipe_Name">Recipe Name</label>
       </div>
       <div class="col-75">
-        <input type="text" id="Recipe Name" name="Recipe Name" placeholder="Recipe for???..">
+        <input type="text" id="Recipe_Name" name="Recipe_Name" placeholder="Recipe for???..">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="Recipe ID">Recipe ID</label>
+        <label for="Recipe_ID">Recipe ID</label>
       </div>
       <div class="col-75">
-        <input type="number" id="Recipe ID" name="Recipe ID" placeholder="Recipe ID????..">
+        <input type="number" id="Recipe_ID" name="Recipe_ID" placeholder="Recipe ID????..">
       </div>
     </div>
     <div class="row">
@@ -92,10 +92,10 @@ input[type=submit]:hover {
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="Preparing Time(min)">Preparing Time(min)</label>
+        <label for="Preparing_Time">Preparing Time(min)</label>
       </div>
       <div class="col-75">
-        <input type="Number" id="Preparing Time(min)" name="Preparing Time(min)" placeholder="time..">
+        <input type="Number" id="Preparing_Time" name="Preparing_Time" placeholder="time..">
       </div>
     </div>
     <div class="row">
