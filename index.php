@@ -46,6 +46,7 @@ table {
       <li><a href="#"><b>Ingredient</b></a></li>
       <li><a href="#"><b>Bill</b></a></li>
       <li><a href="#"><b>About Us</b></a></li>
+        <li><a href="https://docs.google.com/document/d/1-DUma1qz0rY8BqHkYd2Lrz6LSKUHfq70c7sqaTGjUcY/edit"><strong><font        color=#2F4F2F><i         class="fa fa-fw fa-       question-circle"></i> HELP           </font></strong></a></li>
     </ul>
   </div>
 </nav>
