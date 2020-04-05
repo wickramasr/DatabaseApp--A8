@@ -1,3 +1,10 @@
+<?php
+if(isset($_POST["Add_new_recipe"]))
+{
+header('location:Add_new_recipe.php');
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,6 +55,14 @@ table {
       <li><a href="#"><b>About Us</b></a></li>
         <li><a href="https://docs.google.com/document/d/1-DUma1qz0rY8BqHkYd2Lrz6LSKUHfq70c7sqaTGjUcY/edit"><strong><font        color=#2F4F2F><i         class="fa fa-fw fa-       question-circle"></i> HELP           </font></strong></a></li>
     </ul>
+    
+     <div class="text-right"> 
+     <div class="btn">
+      <form name ="form1" action="" method="post">
+      <input type ="submit" name ="Add_new_recipe" value ="Add_new_recipe">
+     </form>
+      </div> 
+    
   </div>
 </nav>
   
