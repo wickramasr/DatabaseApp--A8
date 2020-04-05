@@ -7,10 +7,10 @@
   box-sizing: border-box;
 }
 input[type=text], select, textarea {
-  width: 50%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 2px;
+  width: 80%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
   resize: vertical;
 }
 label {
@@ -18,11 +18,11 @@ label {
   display: inline-block;
 }
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: #9e9ba3;
   color: white;
-  padding: 12px 20px;
+  padding: 15px 25px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
   float: right;
 }
@@ -30,18 +30,18 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 .container {
-  border-radius: 10px;
-  background-color: #f2f2f2;
-  padding: 10px;
+  border-radius: 12px;
+  background-color: #e0cdc3;
+  padding: 11px;
 }
 .col-25 {
   float: left;
-  width: 25%;
+  width: 35%;
   margin-top: 6px;
 }
 .col-75 {
   float: left;
-  width: 50%;
+  width: 60%;
   margin-top: 6px;
 }
 /* Clear floats after the columns */
@@ -53,7 +53,7 @@ input[type=submit]:hover {
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .col-25, .col-75, input[type=submit] {
-    width: 50%;
+    width: 60%;
     margin-top: 0;
   }
 }
@@ -61,7 +61,7 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<h2><center><font color="#238E68"><strong>Add new recipe to the table</strong></font></center></h2></h2>
+<h2><center><font color="#234e8e"><strong>Add new recipe to the table</strong></font></center></h2></h2>
 
 
 <div class="container">
