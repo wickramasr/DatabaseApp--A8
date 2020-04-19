@@ -18,6 +18,6 @@ if ($conn->connect_error) {
 	$sql = "insert into recipe values('$pname', '$id', '$pnumber', '$plocation' ,'$dnum');";
 	$result = $conn->query($sql);
 
-        header ("Location: nepsri.php");
+        header ("Location: home_recipe.php");
 ?>
 
