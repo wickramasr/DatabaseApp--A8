@@ -31,7 +31,7 @@ input[type=submit]:hover {
 }
 .container {
   border-radius: 12px;
-  background-color: #e0cdc3;
+  background-color: #D8D8D8;
   padding: 11px;
 }
 .col-25 {
@@ -61,11 +61,11 @@ input[type=submit]:hover {
 </head>
 <body>
 
-<h2><center><font color="#234e8e"><strong>Add new recipe to the table</strong></font></center></h2></h2>
+<h2><center><font color="000000"><strong>Add new recipe to the table</strong></font></center></h2></h2>
 
 
 <div class="container">
-  <form action="target_nepsri.php" method= "POST">
+  <form action="target_recipe.php" method= "POST">
     <div class="row">
       <div class="col-25">
         <label for="Recipe_Name">Recipe Name</label>
