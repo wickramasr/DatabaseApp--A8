@@ -16,6 +16,6 @@ if ($conn->connect_error) {
 	$sql = "insert into ingredient values('$iname', '$inumber', '$iamount');";
 	$result = $conn->query($sql);
 
-        header ("Location: ingredient.php");
+        header ("Location: home_ingredient.php");
 ?>
 
