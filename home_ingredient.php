@@ -8,7 +8,7 @@ header('location:Add_new_recipe.php');
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>NepSri</title>
+  <title>Ingredient</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -43,18 +43,17 @@ table {
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">NepSri</a>
+      <a class="navbar-brand" href="home_page.php">NepSri</a>
     </div>
     <ul class="nav navbar-nav">
       
+      <li><a href="home_page.php"><b>Home</b></a></li>
+      <li><a href="home_recipe.php"><b>Recipe</b></a></li>
+      <li class="active"><a href="home_ingredient.php"><b>Ingredient</b></a></li>
       
-      <li class="active"><a href="#"><b>Recipe</b></a></li>
-      <li><a href="#"><b>Customer</b></a></li>
-      <li><a href="#"><b>Ingredient</b></a></li>
-      <li><a href="#"><b>Bill</b></a></li>
-      <li><a href="#"><b>Admin</b></a></li>
-      <li><a href="https://docs.google.com/document/d/1-DUma1qz0rY8BqHkYd2Lrz6LSKUHfq70c7sqaTGjUcY/edit"><strong><font        color=#2F4F2F><i         class="fa fa-fw fa-       question-circle"></i> HELP           </font></strong></a></li>
+      <li><a href="https://docs.google.com/document/d/1-DUma1qz0rY8BqHkYd2Lrz6LSKUHfq70c7sqaTGjUcY/edit"><strong><font        color=#000000><i         class="fa fa-fw fa-       question-circle"></i> HELP           </font></strong></a></li>
 	<li class="text-right"><a href="Add_new_ingredient.php"><I><b>Add New Ingredient</b></I></a></li>
+	<li><a href="home_cart.php"><b>Cart</b></a></li>
       </ul
 
     <div class="text-right"> 
@@ -64,7 +63,7 @@ table {
 </nav>
   
 <div class="container">
-  <h1><center><b>Welcome to NepSri</b></center></h1>
+  <h1><center><b>Buy your required ingredients from us!!</b></center></h1>
 
 </div>
 
@@ -85,16 +84,16 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0)
  
 {
-echo '<div class="tab-content">';
-echo '<div id="donor" class="tab-pane fade in active">';
-echo '<table table-hover class="centerTable">';
-echo '<tr bgcolor=#00FFFF style="color:#00006a">
 
-<h2 style="color:Black"; align="center" class="w3-myfont">Recipe</h2>
+echo '<div class="tab-content container">';
+echo '<div id="donor" class="tab-pane fade in active">';
+echo '<table table-hover class="centerTable" style="margin:auto">';
+echo '<tr bgcolor=#D8D8D8 style="color:#000000">
+
 <br/>
 <th>Ingredient Name</th>
 <th>Ingredient ID</th>
-<th>Ingredient Amount</th>
+
 
 </tr>';
 
@@ -105,9 +104,10 @@ echo '<tr bgcolor=#00FFFF style="color:#00006a">
  {
 
 echo "<tr>
+
 <td>" . $row["Ingredient_name"]. "</td>
 <td>" . $row["Ingredient_ID"]. "</td>
-<td>" . $row["Ingredient_Amount"]. "</td>
+
 
 </tr>";
 
