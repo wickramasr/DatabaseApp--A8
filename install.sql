@@ -64,7 +64,6 @@ insert into Customer values("Jackson Oneil", 2825, 16780416 ,"Ap #145-2393 Conva
 insert into Recipe values("Biriyani",2681,6557," A great one-pot rice dish that can still be served up a few days later, perfect for leftovers",30)
 insert into Ingredient values("Rice",5512, 22)
 insert into Bill values("Lorem",2138,"2019-07-25")
-insert into Searched_By values(9218,6260,8641)
 insert into Is_paid_by values(9218,4759)
 insert into Is_in values(7144,6260,8641)
 insert into Are_mentioned_in values(2138,7144)
