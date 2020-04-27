@@ -34,14 +34,6 @@ CREATE TABLE Bill
   PRIMARY KEY (Bill_ID)
 );
 
-CREATE TABLE Searched_By
-(
-  Cus__user_ID INT NOT NULL,
-  Ingredient_IDs INT NOT NULL,
-  Recipe_ID INT NOT NULL,
-  FOREIGN KEY (Cus__user_ID) REFERENCES Customer(Cus__user_ID),
-  FOREIGN KEY (Ingredient_IDs, Recipe_ID) REFERENCES Recipe(Ingredient_IDs, Recipe_ID)
-);
 
 CREATE TABLE Is_paid_by
 (
